@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 0
 
 spring:
   application:
@@ -15,3 +15,8 @@ spring:
       path: /h2-console
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
